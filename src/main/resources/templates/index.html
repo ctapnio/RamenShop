@@ -1,0 +1,90 @@
+<!-- Christian Tapnio -->
+<!-- 991359879 -->
+<!-- Assignment 2 -->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 2</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<div id="header">
+			<br> <a href="#!" class="center">Doghouse Ramen</a>
+		</div>
+	</nav>
+	<div class="row">
+		<div class="column">
+			<form method="post" action="#" th:action="@{/addOrder}"
+				th:object="${order}">
+				<input class="prod1" type="image" width="100%"
+					src="img/product1.png" onmouseover="src='img/prod1sel.png'"
+					onmouseout="src='img/product1.png'">
+				<!-- 				<input type="submit" value="Add"> -->
+				<input type="hidden" name="productName" value="Tonkotsu"> <input
+					type="hidden" name="productId" value="1093210"><br> <input
+					type="hidden" name="productPrice" value="9.99"><br> <label>Qty:
+				</label><br> <input type="number" name="quantity" min="1" required>
+			</form>
+		</div>
+		<div class="column">
+			<form method="post" action="#" th:action="@{/addOrder}"
+				th:object="${order}">
+				<input type="image" width="100%" src="img/product2.png"onmouseover="src='img/prod2sel.png'"
+				onmouseout="src='img/product2.png'"> <input
+					type="hidden" name="productName" value="Shio"> <input
+					type="hidden" name="productId" value="5739205"><br> <input
+					type="hidden" name="productPrice" value="8.99"><br> <label>Qty:
+				</label><br> <input type="number" name="quantity" min="1" required>
+			</form>
+		</div>
+		<div class="column">
+			<form method="post" action="#" th:action="@{/addOrder}"
+				th:object="${order}">
+				<input type="image" width="100%" src="img/product3.png" onmouseover="src='img/prod3sel.png'"
+				onmouseout="src='img/product3.png'"> <input
+					type="hidden" name="productName" value="Miso"> <input
+					type="hidden" name="productId" value="8572648"><br> <input
+					type="hidden" name="productPrice" value="6.99"><br> <label>Qty:
+				</label><br> <input type="number" name="quantity" min="1" required>
+			</form>
+		</div>
+		<div class="column">
+			<form method="post" action="#" th:action="@{/addOrder}"
+				th:object="${order}">
+				<input type="image" width="100%" src="img/product4.png" onmouseover="src='img/prod4sel.png'"
+				onmouseout="src='img/product4.png'"> <input
+					type="hidden" name="productName" value="Shoyu"> <input
+					type="hidden" name="productId" value="2749234"><br> <input
+					type="hidden" name="productPrice" value="7.99"><br> <label>Qty:
+				</label> <br> <input type="number" name="quantity" min="1" required>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- -------------------------------------------------------------------------------- -->
+	<br>
+	<table class="summary">
+		<tr>
+			<th>Name</th>
+			<th>Quantity</th>
+		</tr>
+		<tr th:each="order:${OrderList}">
+
+			<td th:text="${order.productName}">testName</td>
+			<td th:text="${order.quantity}">testQty</td>
+		</tr>
+	</table>
+
+
+	<form method="post" action="#" th:action="@{/getOrder}"
+		th:object="${order}">
+		<input class="float" type="submit" value="Checkout">
+	</form>
+
+
+</body>
+</html>

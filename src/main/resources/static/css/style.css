@@ -1,0 +1,122 @@
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+	{
+	opacity: 1;
+	transition: 1s;
+}
+
+#header {
+	border: 0;
+	margin: 0;
+	font-size: 70px;
+	background-color: #A00B0B;
+	text-align: center;
+	color: white;
+	height: 200px;
+}
+
+#header a {
+	text-decoration: none;
+	color: white;
+	transition: 0.8s;
+}
+
+#header a:hover {
+	text-decoration: none;
+	transition: 0.8s;
+	text-shadow: 2px 2px black;
+}
+
+#header a:visited {
+	color: white;
+	transition: 0.8s;
+	text-decoration: none;
+}
+
+body {
+	border-width: 0;
+	margin: 0;
+	font-family: Herculanum;
+	background-color: #262626;
+	color: white;
+}
+
+.prod1:hover {
+	
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+form {
+	/* 	background-color: grey; */
+	text-align: center;
+}
+
+table {
+	text-align: center;
+}
+
+th {
+	font-weight: bold;
+}
+
+input[type=number] {
+	border: none;
+	outline-width: 0;
+	background-color: #262626;
+	border-bottom: 2px solid black;
+	color: white;
+}
+
+input[type=image] {
+	transition: 1s;
+}
+.summary{
+	width: 25%;
+}
+.float {
+	font-family: Herculanum;
+	position: fixed;
+	right: 0px;
+	height: 48px;
+	width: 100px;
+	bottom: 0px;
+	color: black;
+	text-align: center;
+	background-color: darkgrey;
+}
+
+.float:hover {
+	background-color: #A00B0B;
+	transition: 1s;
+	color: white;
+}
+#sum_table{
+	width: 100%;
+}
+.back{
+	font-family: Herculanum;
+	position: fixed;
+	right: 0px;
+	height: 48px;
+	width: 100px;
+	bottom: 0px;
+	color: black;
+	text-align: center;
+	background-color: darkgrey;
+	
+}
+.back:hover {
+	background-color: #A00B0B;
+	transition: 1s;
+	color: white;
+}
