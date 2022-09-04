@@ -1,4 +1,4 @@
-# RamenShop_SpringBoot_Project
+# 🍜 Ramen Shop
 A ramen ordering application that utilizes SpringBoot framework.
 
 ## Technologies
